@@ -1,13 +1,13 @@
-# main.yml
-# name: Test Action
+name: Test Action
 
-# on:
-#   push:
-#     branches:
-#       - main  # or any branch you want to trigger the action
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow when changes are pushed to the main branch
 
-# jobs:
-#   test:
-#     steps:
-#       - name: 23f2000599@ds.study.iitm.ac.in
-#         run: echo "Hello, world!"
+jobs:
+  test:
+    runs-on: ubuntu-latest  # You can change the OS if needed
+    steps:
+      - name: 23f2000599@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
